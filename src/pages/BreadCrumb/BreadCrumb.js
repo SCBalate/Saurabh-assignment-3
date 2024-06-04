@@ -19,7 +19,6 @@ const BreadCrumb = () => {
     return (
         <div className='breadcrumb'>
             <div>
-                {/* <img src={Home} alt='HomeIcon'></img> */}
                 <i className="icon-house" style={{fontSize:"25px"}}></i>
             </div>
             {
