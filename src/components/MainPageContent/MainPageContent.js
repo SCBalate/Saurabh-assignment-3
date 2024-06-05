@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./MainPageContent.scss";
 import { tableHeaderData } from "../../constants/TableHeaderData";
 import Avatar from "../Avatar/Avatar";
-import EditIcon from "../../assets/Images/EditIcon.png";
-import DeleteIcon from "../../assets/Images/DeleteIcon.png";
+
+
 
 
 
@@ -112,11 +112,11 @@ const ActionMenus = () => {
     <>
       <div className="action-menus-comp" >
         <div className="action-menu-items">
-          <img className="menu-icons" src={EditIcon} alt="Edit-icon"></img>
+          <i className="icon-pencil-line" style={{fontSize:"20px"}}></i>
           <div className="content">Edit</div>
         </div>
         <div className="action-menu-items">
-          <img className="menu-icons" src={DeleteIcon} alt="Delete-icon"></img>
+          <i className="icon-delete" style={{fontSize:"20px"}}></i>
           <div className="content">Delete</div>
         </div>
       </div>
