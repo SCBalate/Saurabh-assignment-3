@@ -21,10 +21,6 @@
           border-left: 8px solid transparent;
           border-right: 8px solid transparent;
 
-          .arrow-icon {
-            width: 49px;
-          }
-
           .column {
             flex: 2 1;
             font-size: 13px;
@@ -44,6 +40,11 @@
               }
             }
           }
+          .arrow-icon {
+            width: 49px;
+          }
+
+          
         }
       }
 
