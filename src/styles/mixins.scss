@@ -112,6 +112,16 @@
   display: flex;
   align-items: center;
 }
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCenterColumn {
+  @include flexCenter;
+  flex-direction: column;
+}
 
 @mixin setTextInOneLine() {
   clear: both;
@@ -128,13 +138,6 @@
   outline-style: none;
 }
 
-//@mixin skeletonAnimate() {
-//  background: linear-gradient(110deg, #ecf1f6 8%, #f9f9f9 18%, #ecf1f6 33%);
-//  background-color: #ecf1f6;
-//  border-radius: 5px;
-//  background-size: 200% 100%;
-//  animation: 1.5s skeletonAnimation linear infinite;
-//}
 
 @mixin responsiveGrid($elementWidth, $rowGap: 10px, $columnGap: 10px) {
   display: grid;
@@ -156,16 +159,7 @@
   flex-direction: column;
 }
 
-@mixin flexCenter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-@mixin flexCenterColumn {
-  @include flexCenter;
-  flex-direction: column;
-}
 
 @mixin flexAlign {
   display: flex;

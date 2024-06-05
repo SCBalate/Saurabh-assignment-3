@@ -2,16 +2,16 @@
 .mainpage-content {
   flex: 1;
   display: flex;
-  .mc-table-content {
+  .main-page-table-content {
     flex: 1;
-    .mtc-table-list {
+    .main-table-list {
       height: 100%;
       display: flex;
       flex-direction: column;
 
-      //   header
-      .mtl-header {
-        .mh-content {
+      
+      .main-page-table-header {
+        .Header-content {
           display: flex;
           align-items: center;
           gap: 5px;
@@ -21,16 +21,16 @@
           border-left: 8px solid transparent;
           border-right: 8px solid transparent;
 
-          .mc-arrow-icon {
+          .arrow-icon {
             width: 49px;
           }
 
-          .mc-column {
+          .column {
             flex: 2 1;
             font-size: 13px;
             font-weight: bold;
             color: var(--tableHeaderColor);
-            .mc-header-content {
+            .Header-content {
               display: flex;
               align-items: center;
               gap: 5px;
@@ -39,17 +39,16 @@
                 @include box(10px);
                 cursor: pointer;
               }
-              .mhc-label {
-                @include fontProperties(13px, 600, var(--textDark));
+              .Header-label{
+                @include fontProperties(13px, 600, black);
               }
             }
           }
         }
       }
 
-      //body
-      .mtl-body-content {
-        .mctctl-body {
+      .main-table-body-content {
+        .main-table-content-body {
           display: flex;
           flex: 1;
           border-bottom: 1px solid var(--inputLine);
@@ -64,21 +63,21 @@
             border-left: 8px solid var(--textDanger);
             transition: all 150ms ease-in-out;
 
-            .ml-down-arrow-icon-small {
-              @include box(15px);
-              cursor: pointer;
-            }
-            .mr-arrow-icon {
+            .arrow-icon {
               @include setToCenter();
               width: 49px;
               cursor: pointer;
             }
-            .mr-task-comp {
+            .ml-down-arrow-icon-small {
+              @include box(15px);
+              cursor: pointer;
+            }
+            .row-task-comp {
               flex: 1;
               @include fontProperties(13px, 600, var(--tableHeaderColor));
-              .mtc-task-content {
+              .table-task-content {
                 @include flexAlign();
-                .mtc-label {
+                .table-row-label {
                   @include fontProperties(13px, normal, va(--textLight));
                 }
                 .mtc-avatar {
@@ -90,42 +89,43 @@
               width: 49px;
               cursor: pointer;
 
-
-              //action menus 
               .action-menus-comp {
                 position: absolute;
-                background-color: #fff;
-                box-shadow: 0px 10px 40px #02090f26;
+                right: 65px;
                 border-radius: 3px;
                 min-width: 100px;
-                right: 65px;
-                .amc-items{
+                background-color: #fff;
+                box-shadow: 0px 10px 40px #02090f26;
+               
+                .action-menu-items{
                   display: flex;
                   align-items: center;
                   gap: 5px;
-                  border-bottom: 1px solid var(--inputLine);
                   height: 28px;
                   padding: 0 7px;
-                  .ai-content{
+                  border-bottom: 1px solid var(--inputLine);
+                 
+                  .menu-icons{
+                    @include setToCenter();
+                    @include box(10px)
+                  }
+                  .content{
                     @include fontProperties(13px, normal, va(--textLight));
 
                   }
                   &:last-child {
                     border-bottom: unset;
                 }
-                  .ai-edit-icon{
-                    @include setToCenter();
-                    @include box(10px)
-                  }
+                 
                 }
               }
             }
           }
           &:hover {
-            .mb-row {
+            .row {
               border-left: 8px solid green;
             }
-            .mb-row {
+            .row {
               background: rgba(237, 249, 255, 0.749);
             }
           }

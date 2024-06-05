@@ -33,6 +33,7 @@ const Avatar = ({
                   <div className="acl-spinner" />
                 </div>
               )}
+              
               <img
                 onError={() => {
                   setImgError(true);

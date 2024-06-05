@@ -1,7 +1,7 @@
 @import "../../styles/mixins.scss";
 
 //   Menu section start 
-.smc-comp {
+.sidebar-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,15 +13,15 @@
     min-height: 50px;
     padding: 5px 0;
 
-    .smc-app-logo {
-        @include setToCenter();
-        @include box(25px);
-        font-size: 24px;
+    .sidebar-logo {
+        font-size: 23px;
         color: #fff;
+        @include setToCenter();
+        @include box(23px);
         object-fit: cover;
     }
 
-    .smc-menu-name {
+    .sidebar-menu-content {
         @include fontProperties(11px, 600, #fff);
         text-align: center;
     }
