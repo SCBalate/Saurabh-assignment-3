@@ -53,7 +53,7 @@
           display: flex;
           flex: 1;
           border-bottom: 1px solid var(--inputLine);
-          .mb-row {
+          .row {
             @include flexAlign();
             flex: 1;
             gap: 5px;

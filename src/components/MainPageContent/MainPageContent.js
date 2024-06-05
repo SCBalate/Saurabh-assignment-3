@@ -58,7 +58,7 @@ const TableRows = ({ data }) => {
           <i className="icon-chevron-down"></i>
         </div>
 
-        <div>
+        <>
           <div class="row-task-comp">
             <div class="table-task-content">
               <div className="table-row-label">{data?.stage}</div>
@@ -91,7 +91,7 @@ const TableRows = ({ data }) => {
               <div className="table-row-label">{data?.deadline}</div>
             </div>
           </div>
-        </div>
+        </>
 
         <div
           className="mr-menus"
